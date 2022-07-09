@@ -10,6 +10,7 @@ header{
     height: 94px;
     padding: 12px;
     background-color: rgb(0, 0, 0);
+    margin-bottom: 60px;
 }
 h1{
     width: 100%;
@@ -25,6 +26,7 @@ header .firstlogo{
     margin-left: 144px;
     width: 70px;
     height: 70px;
+    padding: 5px 15px;
 }
  header a{
   padding-bottom: 40px;
@@ -38,9 +40,30 @@ header ul{
 }
 header li{
  color: rgb(255, 255, 255);
- padding: 10px;
+ padding: 5px 10px;
  float: left;
  margin-left: 50px;
+}
+header li a{
+    position: relative;
+}
+header li a:hover{
+    color: #ffffff;
+
+}
+header li a::after{
+content: "";
+width: 0%;
+height: 1px;
+background-color: #ffffff;
+position: absolute;
+bottom: 0;
+left: 0;
+transition: 2s;
+}
+header li a:hover:after{
+    width: 100%;
+
 }
 main h2{
     margin-top: 50px;
@@ -89,6 +112,7 @@ article a{
    div a{
     font-size: 12px;
    }
+
 h2{
     margin-left: 14px;
     padding-top: 50px;
@@ -155,6 +179,7 @@ footer ul{
 display: block;
 width: 150px;
  height: 150px;color: rgb(253, 253, 255);
+ padding: 5px 15px;
 }
 li a{
     display: block;
@@ -170,11 +195,29 @@ li a{
     margin-top: 40px;
     margin-bottom: 40px;
 }
+div .playlist1{
+    margin-left: 30px;
+}
+div .playlistpirveli{
+    margin-top: 40px;
+}
+.playlist1{
+     background-color: gray;
+    box-shadow: 0px 0px 20px;
+    border-radius: 10px; 
+}
+
 .playlist1 p{
     padding: 4px;
     margin: 4px;
     margin-left: 160px;
 }
+.playlistpirveli{
+     margin-right: 80px;
+     margin-left: -50px;
+  
+}
+
 .playlist2 h3{
     font-size: 24px;
     margin-left:160px ;
@@ -219,4 +262,47 @@ li a{
     font-size: 36px;
     margin-top: 80px;
     margin-bottom: 80px;
+}
+header li a{
+    padding: 5px 10px;
+    position: relative;
+}
+header li a:hover{
+    color: #ffffff;
+
+}
+header li a::after{
+content: "";
+width: 0%;
+height: 1px;
+background-color: #ffffff;
+position: absolute;
+bottom: 0;
+left: 0;
+transition: 2s;
+}
+header li a:hover:after{
+    width: 100%;
+}
+.container a{
+    text-decoration: underline;
+}
+.social .facebook:hover{
+background-image: url(../images/feradifb.png);
+}
+.social .instagram:hover{
+    background-image: url(../images/feradiinsta.png);
+}
+.like{
+    background-image: url(../images/like\ 1.png);
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.like:hover{
+    background-image: url(../images/feradilike.png);
 }
